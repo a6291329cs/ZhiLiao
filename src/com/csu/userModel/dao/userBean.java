@@ -1,6 +1,6 @@
-package com.csu.userBean;
+package com.csu.userModel.dao;
 
-public class usersBean {
+public class userBean {
 		private int userId;          //用户编号
 		private String userName;     //用户名	
 		private String passWord;     //密码
@@ -13,6 +13,31 @@ public class usersBean {
 	    private String educationEx;  //教育经历
 	    private String simpleIntro;  //个人简介
 		private String image;        //图片
+
+		public userBean(){
+			
+		}
+		
+		public userBean(int userId,String userName,String passWord,
+				String email,String sex,String userIntro,String address,
+				String industry,String careerEx,String educationEx,String simpleIntro,
+				String image)
+		{
+			super();
+			this.userId=userId;
+			this.userName=userName;
+			this.passWord=passWord;
+			this.email=email;
+			this.sex=sex;
+			this.userIntro=userIntro;
+			this.address=address;
+			this.industry=industry;
+			this.careerEx=careerEx;
+			this.educationEx=educationEx;
+			this.simpleIntro=simpleIntro;
+			this.image=image;
+		}
+		
 	    public int getUserId() {
 			return userId;
 		}
