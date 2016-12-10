@@ -30,6 +30,7 @@ public class userServlet extends HttpServlet {
 		response.setContentType("text/html;Charset=utf-8");
 		String action = request.getParameter("action");
 		System.out.println("action="+action);
+		System.out.println("xiugai");
 		if(action==null||"".equals(action))
 		{
 			request.getRequestDispatcher("error.jsp").forward(request, response);
